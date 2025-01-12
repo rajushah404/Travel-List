@@ -3,6 +3,7 @@ import Logo from "./Logo"
 import Form from "./Form"
 import PackingList  from "./PackingList";
 import  Stats  from "./Stats";
+import Item from "./Item"
 
 export default function App() {
   const [item, setItems] = useState([]);

@@ -1,9 +1,4 @@
-
-
-
-
-
-export function Item({ item, onDeleteItems, onToggleItem }) {
+export default  function Item({ item, onDeleteItems, onToggleItem }) {
   return (
     <li>
       <input type="checkbox" value={item.packed} onChange={() => onToggleItem(item.id)} />
