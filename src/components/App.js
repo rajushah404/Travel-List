@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Logo from "./Logo"
 import Form from "./Form"
-import { PackingList } from "./PackingList";
-import { Stats } from "./Stats";
+import PackingList  from "./PackingList";
+import  Stats  from "./Stats";
 
 export default function App() {
   const [item, setItems] = useState([]);
@@ -10,12 +10,8 @@ export default function App() {
   function handleAddItems(item) {
     setItems(items => [...items, item]);
   }
-
     function handleClear(){
-
       const confirmed = window.confirm("Do you want to clear the lsit ");
-      
-
       if(confirmed)setItems([]);
     }
   function handleDeleteItems(id) {
@@ -23,7 +19,6 @@ export default function App() {
   }
 
   function handleToggleItem(id) {
-
     setItems((items) => items.map((item) => item.id === id ? 
       { ...item,packed: !item.packed} : item) 
     );

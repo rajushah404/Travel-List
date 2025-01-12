@@ -1,4 +1,4 @@
-export function Stats({ item }) {
+export default function Stats({ item }) {
 
   if (!item.length)
     return (
